@@ -1,7 +1,12 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
+const characterJsonResponse = require("../public/data/characters.json"); 
 
-app.get("/datos", (req, res) => res.send("Express on Vercel!"));
+
+app.use(cors());
+
+app.get("/datos", (req, res) => res.json(characterJsonResponse));
 app.use(express.static('public'))
 
 
