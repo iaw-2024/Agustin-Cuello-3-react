@@ -1,6 +1,6 @@
 import axios from 'axios';
 import './App.css';
-import ListOfCharacters from './components/ListOfCharactersv2';
+import ListOfCharacters from './components/ListOfCharacters';
 
 //data will be the string we send from our server
 const apiCall = () => {
